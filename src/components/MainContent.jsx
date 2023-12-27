@@ -9,11 +9,13 @@ function MainContent() {
   setHelpVisible((isVisible) => !isVisible);
  }
 
+ // no way just no way
+
  return (
   <main>
    <h3>Hello World!</h3>
    <button onClick={toggleHelp}>{helpVisible ? "Hide" : "Show"} Help</button>
-   {helpVisible && <HelpArea />} // no way just no way
+   {helpVisible && <HelpArea />}
   </main>
  );
 }
