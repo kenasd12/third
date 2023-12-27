@@ -13,7 +13,7 @@ function MainContent() {
   <main>
    <h3>Hello World!</h3>
    <button onClick={toggleHelp}>{helpVisible ? "Hide" : "Show"} Help</button>
-   {helpVisible && <HelpArea />}
+   {helpVisible && <HelpArea />} // no way just no way
   </main>
  );
 }
