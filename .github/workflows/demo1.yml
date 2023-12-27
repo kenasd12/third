@@ -4,14 +4,14 @@ on:
     types:
       - opened
     branches:
-      - "main"
-      - "dev-*"
-      - "feat/**"
+      - "main" # pull_request targets main branch
+      - "dev-*" # pull_request targets eg dev-lp branch
+      - "feat/**" # pull_request targets eg feat/hello/world branch
   push:
     branches:
-      - "main"
-      - "dev-*"
-      - "feat/**"
+      - "main" # pull_request targets main branch
+      - "dev-*" # pull_request targets eg dev-lp branch
+      - "feat/**" # pull_request targets eg feat/hello/world branch
     paths-ignore:
       - ".github/workflows/**"
   workflow_dispatch:
@@ -30,4 +30,4 @@ jobs:
       - name: Build code
         run: npm run build
       - name: Deploy project
-        run: echo "Deploying..."
+        run: echo "Deploying..." 
