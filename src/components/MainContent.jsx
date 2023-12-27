@@ -9,6 +9,8 @@ function MainContent() {
   setHelpVisible((isVisible) => !isVisible);
  }
 
+ // no way just no way
+
  return (
   <main>
    <h3>Hello World!</h3>
